@@ -1,0 +1,17 @@
+@host = http://127.0.0.1:8000/api
+
+### 1. Listar comercios
+GET {{host}}/comercios
+Accept: application/json
+
+### 4. Crear con datos válidos
+POST {{host}}/transacciones
+Accept: application/json
+Content-Type: application/json
+
+{
+  "comercio_id": 1,
+  "cliente_nombre": "Luis Mena",
+  "monto": 25.50,
+  "estado": "Iniciada"
+}
